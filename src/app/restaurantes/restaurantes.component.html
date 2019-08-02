@@ -1,0 +1,19 @@
+<!-- INíCIO do CONTEÚDO -->
+<section class="content-header">
+  <h1>
+    Todos os Restaurantes
+  </h1>
+</section>
+<section class="content">
+  <div class="row">
+    <app-restaurante-card *ngFor="let item of restauranteDados" 
+      [name]="item.name" 
+      [id]="item.id" 
+      [imagePath]="item.imagePath" 
+      [deliveryEstimate]="item.deliveryEstimate" 
+      [category]="item.category" 
+      [rating]="item.rating">
+    </app-restaurante-card>
+  </div>
+</section>
+<!-- FIM  do CONTEÚDO -->
